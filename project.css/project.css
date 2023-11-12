@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 60%;
+    height: 500px;
+    background-color: rgb(165, 189, 181);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.container .monitor{
+    width: 90%;
+    height: 170px;
+    border-radius: 5px;
+    background-color: rgb(24, 35, 45);
+    user-select: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    
+
+}
+.container .monitor #deyer{
+    color: aquamarine;
+    text-transform: capitalize;
+}
+.container input{
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    transition: 0.3s ease all;
+    user-select: none;
+}
+.container input:focus{
+    transform: scale(1.03);
+    box-shadow: 0 0 5px rebeccapurple;
+    transition: 0.3s ease all;
+
+}
+.container button{
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+    background-color:rebeccapurple;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.container button:hover{
+    transform: scale(1.03);
+    transition: 0.3s ease all;
+    box-shadow: 0 0 5px blueviolet;
+    
+}
+@media only screen and(max-width:520px){
+    .container input{
+      width: 90%;
+    }
+   
+}
+@media only screen and(max-width:400px){
+    .container input{
+        font-size: 10px;
+    }
+    .container #deyer{
+        font-size: 17px;
+    }
+}
